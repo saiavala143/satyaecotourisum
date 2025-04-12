@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    margin: 0;
+    color: white;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#services {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space out the services evenly */
+    max-width: 1200px; /* Set a max width for the services section */
+    margin: 0 auto; /* Center the services */
+    flex-wrap: wrap; /* Optional: Allows wrapping on smaller screens */
+    gap: 20px; /* Optional: Adds spacing between cards */
+}
+
+.service {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    padding: 20px; /* Increased padding for more space inside the card */
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    flex: 1; /* Allow the service cards to grow equally */
+    min-width: 300px; /* Increased minimum width for the service cards */
+    max-width: 400px; /* Increased maximum width for the service cards */
+    height: 250px; /* Set a fixed height for uniformity */
+    transition: transform 0.3s; /* Add a transition effect */
+}
+
+.service:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+#food-service {
+    background-image: url('images/resturant.jpg'); /* Replace with your food service background image */
+    background-size: cover;
+    background-position: center;
+}
+
+#luxury-rooms {
+    background-image: url('images/rooms.jpg'); /* Replace with your luxury rooms background image */
+    background-size: cover;
+    background-position: center;
+}
+
+#traveling-vehicles {
+    background-image: url('images/cars.jpg'); /* Replace with your vehicles background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.service p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text readability */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.takeaway-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .takeaway-btn:hover {
+    background-color: #45a049;
+  }
+  #bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Push behind all content */
+    opacity: 0.85; /* Optional: Slight transparency for readability */
+  }
+  
